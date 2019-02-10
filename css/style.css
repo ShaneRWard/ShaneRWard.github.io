@@ -1,0 +1,101 @@
+body{
+    background-color: #f3f3f3;
+    font-family: 'PT Serif', serif;
+    font: 'PT Serif';
+    font-size: 16px;
+    line-height: 1.6em;
+    margin:0;
+}
+
+a{
+    color: #1985ff;
+    text-decoration: none;
+}
+
+#main-header{
+    background-color: rgb(29, 24, 24);
+    font: 'PT Serif';
+    color: white;
+    margin:0;
+    padding:10px 0 10px 145px;
+}
+
+#navbar{
+    background-color:black;
+    margin:0;
+    padding:10px;
+    padding-left: 105px;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.button{
+    background-color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button a{
+    text-decoration: none;
+}
+
+.fixed{
+    position: fixed;
+    top: 400px;
+}
+
+.container{
+    background-image: url('../img/showcase.jpg');
+    background-attachment: fixed;
+    min-height: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#profile{
+    float: left;
+    margin: 55px 40px 40px 150px;
+    border: 1px solid white;
+    padding: 7px 7px 0 7px;
+}
+
+#content{
+    color: white;
+    float: right;
+    width: 40%;
+    margin:40px 100px 40px 0px;
+    padding-right: 120px;
+    text-align: justify;
+}
+
+#main-footer{
+    width:100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:20px 0px;
+}
+
+#main-footer ul{
+    list-style: none;
+}
+
+#main-footer li{
+    display: inline;
+}
+
+#main-footer a{
+    text-decoration: none;
+    padding-right:10px;
+}
