@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color:blue;
+}
+
 #main-header{
     background-color: rgb(29, 24, 24);
     font: 'PT Serif';
