@@ -59,7 +59,7 @@ a:hover{
     top: 400px;
 }
 
-.container{
+.showcase{
     background-image: url('../img/showcase.jpg');
     background-attachment: fixed;
     min-height: 800px;
