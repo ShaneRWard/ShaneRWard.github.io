@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>MyNotebook - Frameworks</title>
+    <title>MyNotebook - HTML</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.ico">
@@ -122,10 +122,11 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
+
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/banner_02.jpg);">
         <div class="bradcumbContent">
-            <h2>Frameworks</h2>
+            <h2>HTML</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -136,77 +137,121 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <span>CMS Setup</span>
-                        <h3>What is a Framework?</h3>
+                        <span>Languages</span>
+                        <h3>Hypertext Markup Language</h3>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 wow fadeInUp" data-wow-delay="400ms">
-                    <p>A framework is a collection of CSS, Javascript, icon libraries, and files of standardized code used for building websites. They can be very useful tools when it comes to web development. They help to build responsive and dynamic pages that should appeal to users. They can save a lot of time and effort once you become familiar with them. They do, however, have their drawbacks. As said before, they are libraries of code, which means they will have a lot of code that you don't need. That excess code can make your website bulky and slow. This isn't always the case as there are some minimalistic frameworks designed to reduce excess data and the benefits of using frameworks usually outweight the risks of using them. Below we will go over some of the more popular frameworks.</p>
+                    <p>HTML stands for Hypertext Markup Language and is the basic code that makes up web pages. It's generally refered to as the structure of a web page and has less of an effect on the visual outcome. That part is left to CSS and Javascript. Every element in html uses tags to identify the properties of that element. These tags usually come in pairs; an opening tag and a closing tag. Opening tags start with a &lt symbol, the identifying text such as div or span, then a &gt symbol. Closing tags are the same except it starts with &lt/ to signify it's closing. As an example a heading tag would look like this:</p>
+                    <p>&lth1&gtHeading Text&lt/h1&gt</p>
+                    <p>There are several unique elements that do not use closing tags as they are not required for the purpose they serve. We will discuss those elements further down.</p>
                 </div>
             </div>
-        </div> 
-        <div class="container section-padding-50">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <hr>
-                        <h3>Bootstrap</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>You may not have heard of Bootstrap if you're new to web development, but then you probably didn't know what a framework is either. Bootstrap is an open source framework and is probably the most popular of frameworks at this time. It's been out since 2011, so it's had plenty of time to build a following and it's updated continually. It has a lot of the latest and greatest tools for web building. As such, it's also one of the bulkier frameworks out there because many of its styles are not used very often. It comes with the Sass CSS preprocessor (This is a program that creates CSS from it's syntax. They often add features that CSS can't usually do on it's own). It provides a nice variety of elements like nav bars, form styles, list styles, wells, grids, and more. You can find it <a href="https://getbootstrap.com/">here</a>.</p>
+            <div class="containter section-padding-100">
+                <div class="row">
+                    <table class="table table-bordered table-hover table-condensed wow fadeInUp" data-wow-delay="300ms">
+                        <tr>
+                        <th>Syntax</th>
+                        <th>Effect</th>
+                        <th>Description</th>
+                        </tr>
+                        <tr>
+                        <th># Heading1</th>
+                        <th><h1>Heading1</h1></th>
+                        <th>Largest heading size. HTML Equivalent to &lth1&gt.</th>
+                        </tr>
+                        <tr>
+                        <th>## Heading2</th>
+                        <th><h2>Heading2</h2></th>
+                        <th>Second largest heading size. HTML Equivalent to &lth2&gt.</th>
+                        </tr>
+                        <tr>
+                        <th>### Heading3</th>
+                        <th><h3>Heading3</h3></th>
+                        <th>Third largest heading size. HTML Equivalent to &lth3&gt.</th>
+                        </tr>
+                        <tr>
+                        <th>#### Heading4</th>
+                        <th><h4>Heading4</h4></th>
+                        <th>Fourth largest heading size. HTML Equivalent to &lth4&gt.</th>
+                        </tr>
+                        <tr>
+                        <th>##### Heading5</th>
+                        <th><h5>Heading5</h5></th>
+                        <th>Fifth largest heading size. HTML Equivalent to &lth5&gt.</th>
+                        </tr>
+                        <tr>
+                        <th>###### Heading6</th>
+                        <th><h6>Heading6</h6></th>
+                        <th>Smallest heading size. HTML Equivalent to &lth6&gt.</th>
+                        </tr>
+                        <tr>
+                        <th>
+                            <ul>
+                                <li>**bold text**</li>
+                                <li>__bold text__</li>
+                            </ul>
+                        </th>
+                        <th><strong>bold text</strong></th>
+                        <th>Styles the enclosed text as bold.</th>
+                        </tr>
+                        <th>
+                            <ul>
+                                <li>*italic text*</li>
+                                <li>_italic text_</li>
+                            </ul>
+                        </th>
+                        <th><em>italic text</em></th>
+                        <th>Italicizes the enclosed text.</th>
+                        </tr>
+                        <tr>
+                        <th>~~scratched out~~</th>
+                        <th><del>scratched out</del></th>
+                        <th>Puts a line through text to <em>scratch</em> it out.</th>
+                        </tr>
+                        <tr>
+                        <th>
+                            <ol>
+                                <li>- first item</li>
+                                <li>- second item</li>
+                                <li>- third item</li>
+                            </ol>
+                        </th>
+                        <th>
+                            <li>first item</li>
+                            <li>second item</li>
+                            <li>third item</li>
+                        </th>
+                        <th>Creates an unordered list.</th>
+                        </tr>
+                        <tr>
+                        <th>
+                            <ol>
+                                <li>1. first item</li>
+                                <li>2. second item</li>
+                                <li>3. third item</li>
+                            </ol>
+                        </th>
+                        <th>
+                            <ol>
+                                <li>1. first item</li>
+                                <li>2. second item</li>
+                                <li>3. third item</li>
+                            </ol>
+                        </th>
+                        <th>Creates an ordered list.</th>
+                        </tr>
+                        <tr>
+                        <th>`highlighted text`</th>
+                        <th><mark>highlighted text</mark></th>
+                        <th>Highlights text with text background color.</th>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="container section-padding-50">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <hr>
-                        <h3>Pure.CSS</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>As mentioned before, there are a few minimalist frameworks that have a very light load. Pure is one of those frameworks. As the name suggests, it is purely CSS. No Javascript, no jQuery, no extra bells and whistles. It's so thin that it only makes up 400 lines of code. This makes it very light, 3.8kb when fully compressed and minified, yet it's still very responsive. Like others, it has nice grids, buttons, tables, and menus. It's light design makes it geared toward use with mobile devices which may process slower than a PC. It's skeletal design may make it easier for inexperienced developers, but like Pure.CSS, it lacks a the broad selection of modules other frameworks would have and any Javascript. You can find Pure.CSS <a href="https://purecss.io/">Here</a>.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container section-padding-50">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <hr>
-                        <h3>Skeleton</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>Speaking of skeletal designs, Skeleton is another bare bones framework meant for quick and basic sites. It's so thin, it makes up only 400 lines of code. Described as more of a boiler plate, it's intended to be a starting point from which to build up from. As such, it may be be suitable for newer developers. Skeleton can be found <a href="http://getskeleton.com/">Here</a>.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container section-padding-50">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <hr>
-                        <h3>Semantic-UI</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>If you're one looking for lots of tools to work with and are very new to development, Semantic-UI is a great framework. Its language is simple, self explanitory, and designed to make web building easier for inexperienced developers. One of it's more notable features is that it has a massive amount of third party libraries to work from, giving you anything and everything you need to make the website you want. What's better is that these file sizes are small and you can add only what you need. This is very handy considering Semantic-UI is very large compared to other frameworks. Semantic-UI is frequently updated and it updates your version automatically so you don't have to worry about it. If this sounds like the right framework for you, go to it webpage <a href="https://semantic-ui.com/">Here</a>.</p>
-                </div>
-            </div>
-        </div>                
     </section>
     <!-- ##### About Us Area End ##### -->
 
@@ -235,7 +280,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="footer-widget mb-100">
                             <div class="widget-title">
-                                <h6>Usefull Links</h6>
+                                <h6>Useful Links</h6>
                             </div>
                             <nav>
                                 <ul class="useful-links">
