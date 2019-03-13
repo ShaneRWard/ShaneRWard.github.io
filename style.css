@@ -52,6 +52,9 @@ ol {
   ol li {
     list-style: none; }
 
+.list-padding {
+  margin: 0 15px; }
+
 img {
   height: auto;
   max-width: 100%; }
