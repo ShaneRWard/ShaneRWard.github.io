@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>MyNotebook - Home</title>
+    <title>MyNotebook - SemVer</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.ico">
@@ -17,6 +17,7 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
     <!-- ##### Preloader ##### -->
@@ -121,53 +122,60 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
-    <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
 
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/keyboard-min.jpg)">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <h4 data-animation="fadeInUp" data-delay="100ms">I studied, now you can too.</h4>
-                                <h2 data-animation="fadeInUp" data-delay="400ms">Welcome to<br>MyNotebook</h2>
-                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/desk-min.jpg)">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <h4 data-animation="fadeInUp" data-delay="100ms">Time to get your feet wet</h4>
-                                <h2 data-animation="fadeInUp" data-delay="400ms">Dive into<br>Web Develpment</h2>
-                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/banner_02.jpg);">
+        <div class="bradcumbContent">
+            <h2>SemVer</h2>
         </div>
-    </section>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
     <section class="about-us-area mt-50 section-padding-100">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Welcome to MyNotebook! This is a project done as the culmination of my studies into web development beginning in the Spring of 2019. This website serves as a virtual notebook for the things I have learned. While it is the result of a class project, I would be remiss if I didn't express the importance of this project as a learning tool. What better way to solidify the things I've learned than to use them in making this website and sharing my notes with you?</p>
-                    <p>While this website began as a final project, it will remain my notebook as I continue through my studies. I plan to add updates and expand the website as I learn more about web development. MyNotebook covers HTML, CSS, the useful functions of Git and GitHub, setting up a content management system, search engine optimization, and more. It's my hope that I can not only expand upon these as I learn more, but add more subjects such as JavaScript, JQuery, SQL, and server side languages.</p>
-                    <p>So join me on my journey into web development. Learn with me, use my notes, and have fun! If you enjoy building web pages like I do, use it as a guide for your own creations! You have my knowledge at your fingertips.</p>
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <span>Web Tech</span>
+                        <h3>Semantic Versioning</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="400ms">
+                    <p>You may not have ever heard of samantic versioning (SemVer) before, but chances are you have seen it at one point or another in the last several decades. It's an important system that helps to keep track of changes that happen with software. SemVer is esssentially a way of numbering versions of software. It's a three number system where each number tells something about the version and the numbers are each separated by a period. If ever you've loaded up an application on your phone or a program on your computer, there was likely a version number shown somewhere in the window. If you go into the "about" menu or perhaps in the "help" menu in a program, it will display the current version of that software using semantic versioning. Take the image below for example. This is from the "About" section in Visual Studio Code. It shows that the current version in use is 1.30.2.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="wow fadeInUp" data-wow-delay="300ms">
+                    <img src="img/images/semver.PNG">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>So, what do these numbers mean? There's a few things to note about these numbers before we explain what each of them means. A piece of software needs to have a publicly declared API. There needs to be a starting point, a public release from which people can measure and track the progression of updates. The first publicly available version should have the number 1.0.0. Prior to release, while it's still in initial development, one could still keep track of the version, but those should start at 0.1.0. One may also use pre-release strings, such as alpha1 for example. These are ammended to the end of the semantic versioning number.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>Reading it from left to right, the first number indicates the major version number, the middle indicates a minor version, and the last indicates a patch number. Whenever the major version changes, it breaks from the API of the previous version and there will be no backward compatibility to it. The minor version indicates a new feature or big changes. It doesn't break the backwards compatibility or the API. So, in the case of our version of Visual Studio code shown above, it's still compatible with version 1.29.0. The last number, the patch number, is used to fix bugs, very minor updates to fix small problems. If you have to break backwards compatibility to fix bugs, you will have to do a whole new major version change.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>So, looking again at our VS Code version. There have not been any major version changes since its release, but there have been 30 minor changes and feature updates, and 2 bug fixes.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>Why use semantic versioning? There are a few benefits that make the whole process easier and cleaner. It makes compatibility or dependency issues easier to follow. It encourages well defined APIs and it makes it rather clear how to label versions when new upgrades, updates, and fixes are made.</p>
+                    <p>More information can be found at <a href="http://semver.org">http://semver.org</a>.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ##### Hero Area End ##### -->
+    <!-- ##### About Us Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -179,7 +187,7 @@
                         <div class="footer-widget mb-100">
                             <div class="widget-title">
                                 <a href="#">
-                                  <!-- <img src="img/core-img/logo2.png" alt=""> -->
+                                    <!-- <img src="img/core-img/logo2.png" alt=""> -->
                                 </a>
                             </div>
                             <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
