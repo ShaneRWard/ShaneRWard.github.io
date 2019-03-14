@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>MyNotebook - Git</title>
+    <title>MyNotebook - branching</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.ico">
@@ -125,7 +125,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/banner_02.jpg);">
         <div class="bradcumbContent">
-            <h2>Git</h2>
+            <h2>Branches</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -136,93 +136,44 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                        <span>GitHub & Git</span>
-                        <h3>Git</h3>
+                        <span>GitHub &amp Git</span>
+                        <h3>Branches and Master Branch</h3>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 wow fadeInUp" data-wow-delay="400ms">
-                    <p>Git is an open source system used for version control. It is not a part of GitHub, though for our purposes we will be using it to upload files to GitHub. It's program that uses CLI and similar commands. It has integrated several diffent kinds of Command Line Interface so they can all be used for its purposes. When paired with resources like GitHub, it makes a great tool for collaboration between developers. It helps them keep on the same page by allowing everyone access to the same code. It can be used in making branching versions of code which can be merged with the master version when needed. It's an essential tool for developers. Git is available to download for free <a href="https://git-scm.com/">HERE</a>.</p>
+                    <p>Once you have created a repository on github, you will be sent to a setup page that provides instructions on how to copy or clone the new repository from GitHub to your computer so you can work on it locally. On this page there will be a URL that you will need. Either copy it or write it down.</p>
                 </div>
                 <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>Git uses a staging process in it's <a href="workflow.html">workflow</a> that is important. It can be described as having three different tiers; the working directory, the staging area, and the repository. Files you work on are part of the working directory. Files can then be added to the staging area for review or modified before committing them to the repository. Modified files when committed, are expressed as a set of changes rather than a whole file to replace the older version.</p>
+                    <img src="img/images/cloneinstructions.PNG" alt="instructions"> 
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>The first thing you should do is create a folder with a name matching that of the repository. This is where you're going to clone the repo. From here, you will need to use the Git terminal to navigate to that new folder.</p>
                 </div>
                 <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>There are a couple different programs associated with Git, but for our purposes, we are going to focus on the terminal program, Git Bash. Any time throughout this site that "terminal" is mentioned, it is refering to Git Bash. Some IDEs can be set up to use this terminal, which can be handy, but not entirely necessary. Here we will go over several basic but essential commands. Many of these are mentioned in other sections, but this shall work as a reference guide.</p>
+                    <img src="img/images/repofolder.PNG" alt="repositories"> 
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+
+                    <p>Once you are there, begin by entering the following command: <strong><em>git init</em></strong>. This will initialize the repository and create hidden files within that directory. Then, enter the following: <strong><em>echo "# Hello-World" >> README.md</em></strong>. This will make the README file in the repo folder. You're going to first add the readme file to the tracked files by entering <strong><em>git add README.md</em></strong>, then commit it by entering <strong><em>git commit -m "First commit"</em></strong>. The readme file is staged and ready to be pushed, but first it needs to know where it's going to be pushed to. 
                 </div>
                 <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>NOTE: Every git command starts with "git"; example: git add example.txt. Parenthesis are placeholders and are not used unless otherwise specified.</p>
+                    <img src="img/images/init.PNG" alt="Create new repository">
                 </div>
-            </div>
-            <div class="containter section-padding-100">
-                <div class="row">
-                    <table class="table table-bordered table-hover table-condensed wow fadeInUp" data-wow-delay="300ms">
-                        <tr>
-                        <th>Command</th>
-                        <th>Description</th>
-                        </tr>
-                        <tr>
-                        <th>git cofig --global user.name "username"</th>
-                        <th>This will configure Git to assign an Author associated with your commits. After installing Git, this may be required the first time you use it.</th>
-                        </tr>
-                        <tr>
-                        <th>git config --global user.email</th>
-                        <th>Like the username, this will assign an email address associated with your commits. May be required the first time you use Git.</th>
-                        </tr>
-                        <tr>
-                        <th>git init</th>
-                         <th>Creates a new local repository.</th>
-                        </tr>
-                        <tr>
-                        <th>git remote add origin (url)</th>
-                        <th>Connects to a remote repository. Enter the URL of the remote server. Do not use parenthesis.</th>
-                        </tr>
-                        <th>git pull</th>
-                        <th>Pulls changes from your remote repository and merges them with your local repository. If changes happen to the remote repository, you will have to pull them to local repository to resolve conflicts.</th>
-                        </tr>
-                        <tr>
-                        <th>git status</th>
-                        <th>List all files that need to be added, changed files, and files that need to be committed. Files ready to be committed are shown in green while changed files and untracked files are shown in red.</th>
-                        </tr>
-                        <tr>
-                        <th>git add (filename)</th>
-                        <th>Adds specified file to staging area.</th>
-                        </tr>
-                        <tr>
-                        <th>
-                            <ul>
-                                <li>git add --all</li>
-                                <li>git add *</li>
-                                <li>git add -A</li>
-                            </ul>
-                        </th>
-                        <th>Adds all untracked and modified files to staging area.</th>
-                        </tr>
-                        <tr>
-                        <th>git commit -m "message"</th>
-                        <th>Commits staged files to repository with message.</th>
-                        </tr>
-                        <tr>
-                        <th>git push</th>
-                        <th>Pushed committed files on current branch to remote repository.</th>
-                        </tr>
-                        <tr>
-                        <th>git log</th>
-                        <th>Provides a log of commits.</th>
-                        </tr>
-                        <th>git branch (name)</th>
-                        <th>Creates a new branch with the specified name.</th>
-                        </tr>
-                        </tr>
-                        <th>git checkout (name)</th>
-                        <th>Switches from one branch to another.</th>
-                        </tr>
-                        </tr>
-                        <th></th>
-                        <th>Creates a new branch with the specified name.</th>
-                        </tr>
-                    </table>
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>Here is where that URL comes in. In the terminal, enter <strong><em>git remote add origin (URL)</em></strong>. *Note do not include the brackets, just the URL* Almost done! Now comes the final "push". Enter <strong><em>git push -u origin master</em></strong>. Finally, enter your login credentials when prompted.</p>
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <img src="img/images/gitremote.PNG" alt="Last bit of code">
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>That's it, you're done cloning! If you check the new GitHub repository. You will see the README.md file loaded.</p>
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <img src="img/images/repodone.PNG" alt="Repo cloned">
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>One final note, if you've already started a project locally and wish to make it into a repository, the process is essentially the same, just make sure the name of the folder it's in matches the name of the repository, navigate to that folder in the Git terminal, do a <strong><em>git init</em></strong>, <strong><em>git add *</em></strong>, <strong><em>git commit</em></strong>, <strong><em>git remote add origin (URL)</em></strong>, and a <strong><em>git push -u origin master</em></strong>.</p>
                 </div>
             </div>
         </div>
@@ -254,7 +205,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="footer-widget mb-100">
                             <div class="widget-title">
-                                <h6>Useful Links</h6>
+                                <h6>Usefull Links</h6>
                             </div>
                             <nav>
                                 <ul class="useful-links">
