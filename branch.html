@@ -143,38 +143,66 @@
             </div>
             <div class="row">
                 <div class="col-12 wow fadeInUp" data-wow-delay="400ms">
-                    <p>Once you have created a repository on github, you will be sent to a setup page that provides instructions on how to copy or clone the new repository from GitHub to your computer so you can work on it locally. On this page there will be a URL that you will need. Either copy it or write it down.</p>
+                    <p>Branching is an imporant part of Git, GitHub, and version control. It allows teams to work in parallel to each other, to experiment and proper implementation of features. It helps to eliminate risk. As a general rule, no branch should ever be permanent. In fact, no branch should last any longer than it needs to be. Provided here is a guide to using branching using Git.</p>
+                </div>  
+                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <p>First and foremost, let's start with creating a branch. Say a problem arises in your code. It may not be prudent to simply jump into the code and try to fix it directly. You would want to branch out, create a fix, then merge back into the main branch. Click through the tabs below to learn more about branching.</p>
                 </div>
+            </div>
+            <br><br>
+            <div>
                 <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <img src="img/images/cloneinstructions.PNG" alt="instructions"> 
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>The first thing you should do is create a folder with a name matching that of the repository. This is where you're going to clone the repo. From here, you will need to use the Git terminal to navigate to that new folder.</p>
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <img src="img/images/repofolder.PNG" alt="repositories"> 
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="academy-tabs-content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Branching</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Checkout Branches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Merge Branches</a>
+                            </li>
+                        </ul>
 
-                    <p>Once you are there, begin by entering the following command: <strong><em>git init</em></strong>. This will initialize the repository and create hidden files within that directory. Then, enter the following: <strong><em>echo "# Hello-World" >> README.md</em></strong>. This will make the README file in the repo folder. You're going to first add the readme file to the tracked files by entering <strong><em>git add README.md</em></strong>, then commit it by entering <strong><em>git commit -m "First commit"</em></strong>. The readme file is staged and ready to be pushed, but first it needs to know where it's going to be pushed to. 
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <img src="img/images/init.PNG" alt="Create new repository">
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>Here is where that URL comes in. In the terminal, enter <strong><em>git remote add origin (URL)</em></strong>. *Note do not include the brackets, just the URL* Almost done! Now comes the final "push". Enter <strong><em>git push -u origin master</em></strong>. Finally, enter your login credentials when prompted.</p>
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <img src="img/images/gitremote.PNG" alt="Last bit of code">
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>That's it, you're done cloning! If you check the new GitHub repository. You will see the README.md file loaded.</p>
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <img src="img/images/repodone.PNG" alt="Repo cloned">
-                </div>
-                <div class="col-12 wow fadeInUp" data-wow-delay="300ms">
-                    <p>One final note, if you've already started a project locally and wish to make it into a repository, the process is essentially the same, just make sure the name of the folder it's in matches the name of the repository, navigate to that folder in the Git terminal, do a <strong><em>git init</em></strong>, <strong><em>git add *</em></strong>, <strong><em>git commit</em></strong>, <strong><em>git remote add origin (URL)</em></strong>, and a <strong><em>git push -u origin master</em></strong>.</p>
-                </div>
+                        <div class="tab-content mb-100" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                                <div class="academy-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="academy-tab-text">
+                                        <p>Take the example given above. An major bug has been found in the code and it needs to be fixed quickly. To create a new branch, we must go into Git and enter the following command: git brach (branchname). Take a look at the example below.</p>
+                                        <p><strong><em>git branch hotFix</em></strong></p>
+                                        <p>Now we have a new branch. We can work on this hotFix to solve an issue in our code. Once we have completed work on the fix, however, we cannot simply commit those changes because Git thinks we are still on the Master branch. We need to switch to the hotFix branch. Click over to the next tab to learn what to do next.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                <div class="academy-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="academy-tab-text">
+                                        <p>To move to the hotFix branch we need to check it out.</p>
+                                        <p><strong><em>git checkout hotFix</em></strong></p>
+                                        <p>Now we have switched from the Master branch to the hotFix branch. Now we can commit our work.</p>
+                                        <p><strong><em>git commit -m"hotFix added</em></strong>.</p>
+                                        <p>It may be prudent to commit the branch as soon as you create it. You can do this in one line using the following:</p>
+                                        <p><strong><em>git checkout -b hotFix</em></strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                                <div class="academy-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="academy-tab-text">
+                                        <p>Now that our fix has been made, we have committed it, but it's not yet a part of the main code. Instead of an inordinate amount of time copying and pasting and checking, we can cleanly <strong>merge</strong> the two branches.</p>
+                                        <p>First we checkout the Master branch, then we merge it with the hotFix branch.</p>
+                                        <p><strong>git checkout master; git merge hotFix <em></em></strong></p>
+                                        <p><strong>*Note, the example above displays how two commands can be entered on one line separated by a ";".*</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
     </section>
